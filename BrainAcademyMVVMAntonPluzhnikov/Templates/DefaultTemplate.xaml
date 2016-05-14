@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:BrainAcademyMVVMAntonPluzhnikov.Templates">
+    <ControlTemplate x:Key="ButtonDefaultTemplate" TargetType="Button">
+        <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" ClipToBounds="True">
+            <Rectangle
+                HorizontalAlignment="Stretch"
+                       VerticalAlignment="Stretch"
+                       Stroke="{TemplateBinding BorderBrush}"
+                       StrokeThickness="{TemplateBinding BorderThickness}"
+                       Fill="{TemplateBinding Background}"
+                       RadiusX="10" RadiusY="10"
+                       />
+            <ContentPresenter Margin="10" Content="{TemplateBinding Content}" TextBlock.Foreground="Black"/>
+        </Grid>
+    </ControlTemplate>
+</ResourceDictionary>
